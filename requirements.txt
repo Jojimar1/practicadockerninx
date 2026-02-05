@@ -1,0 +1,5 @@
+django
+gunicorn
+pillow
+django-tailwind
+# Añade aquí cualquier otra que uses (crispy-forms, etc.)

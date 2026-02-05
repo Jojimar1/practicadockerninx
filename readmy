@@ -1,0 +1,22 @@
+# Personal Blog - Despliegue con Docker y Nginx (Práctica DAPPW)
+
+Este proyecto implementa un blog personal en Django utilizando una arquitectura de producción basada en contenedores, siguiendo las pautas de optimización y seguridad.
+
+## 🚀 Arquitectura de Despliegue (Pág. 118-122)
+
+Para cumplir con los estándares de producción, se ha separado la lógica de la aplicación del servicio de archivos estáticos:
+
+1.  **Contenedor Web (Django + Gunicorn):** Gestiona la lógica de backend. Se ha eliminado `django-browser-reload` para evitar redundancias en producción (Mala praxis, Pág. 117).
+2.  **Contenedor Nginx:** Actúa como proxy inverso y servidor de archivos estáticos/media, mejorando el rendimiento.
+3.  **Volúmenes compartidos:** Se utiliza un volumen global para que Nginx pueda servir los archivos que Django genera mediante `collectstatic` (Pág. 122).
+
+## 🛠️ Requisitos previos
+
+* Docker Desktop con WSL2 habilitado.
+* Archivo `.env` configurado en la raíz.
+
+## 📦 Instalación y Puesta en Marcha
+
+1. **Construir y levantar el entorno:**
+   ```bash
+   docker-compose up --build -d
