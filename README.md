@@ -22,3 +22,4 @@ Servicio Web: Ejecuta la aplicacion Django a traves de Gunicorn. Se encarga de p
 Servicio Nginx: Actúa como intermediario entre el usuario y la aplicacion. Su funcion es recibir las peticiones en el puerto 80 y servir de manera eficiente los archivos estaticos y multimedia almacenados en los volumenes.
 <img width="1897" height="902" alt="Captura de pantalla 2026-02-05 203110" src="https://github.com/user-attachments/assets/d6979f86-130b-403e-81b7-95825c9a4a6d" />
 <img width="1000" height="768" alt="aaaaaaaa" src="https://github.com/user-attachments/assets/1ef63960-1225-4446-893b-5df0d0259aeb" />
+<img width="1000" height="768" alt="aaaaaaaa" src="https://github.com/user-attachments/assets/d5978043-17e7-4a18-921d-336c2540eea6" />
